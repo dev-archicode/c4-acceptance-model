@@ -1,0 +1,10 @@
+# Adapted from the "Big Bank plc" example on c4model.com by Simon Brown,
+# licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/):
+# transcribed into the ArchiCode DSL and trimmed, with single-word
+# relationship descriptions made specific and a load balancer added.
+
+name: big-bank
+version: "1.0"
+notation:
+  name: c4
+  version: "1.0"

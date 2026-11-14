@@ -1,0 +1,30 @@
+schemaVersion: 1
+
+rules:
+  - id: element-is-described
+    kind: required-property
+    severity: warning
+    description: "Every element states its key responsibilities at a glance"
+    elements: {}
+    property: description
+
+  - id: technology-is-named
+    kind: required-property
+    severity: warning
+    description: "Every container and component names its technology"
+    elements: { type: [container, component] }
+    property: technology
+
+  - id: relationship-is-labelled
+    kind: required-property
+    severity: warning
+    description: "Every relationship says what it does, in the direction it points"
+    relations: { type: uses }
+    property: description
+
+  - id: container-call-names-protocol
+    kind: required-property
+    severity: warning
+    description: "A relationship between two containers names its technology or protocol"
+    relations: { type: uses, source: { type: container }, target: { type: container } }
+    property: technology
