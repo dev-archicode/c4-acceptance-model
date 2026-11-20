@@ -1,0 +1,9 @@
+{
+  "edges": [],
+  "id": "acceptance-view",
+  "nodes": [
+    { "height": 120, "ref": "acceptance-view.doomed", "width": 240, "x": 0, "y": 0 }
+  ],
+  "schemaVersion": 1,
+  "title": "Acceptance view"
+}
