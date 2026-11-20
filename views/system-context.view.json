@@ -1,22 +1,25 @@
 {
   "edges": [
+    { "source": "internet-banking.internet-banking-system", "target": "internet-banking.mobile-app", "type": "contains" },
     { "source": "internet-banking.internet-banking-system", "target": "internet-banking.web-application", "type": "contains" },
     { "derived": true, "source": "internet-banking.internet-banking-system", "target": "landscape.email-system", "type": "uses" },
     { "derived": true, "source": "internet-banking.internet-banking-system", "target": "landscape.mainframe-banking-system", "type": "uses" },
     { "source": "landscape.customer-service-staff", "target": "landscape.mainframe-banking-system", "type": "uses" },
     { "source": "landscape.email-system", "target": "landscape.personal-banking-customer", "type": "uses" },
     { "derived": true, "source": "landscape.personal-banking-customer", "target": "internet-banking.internet-banking-system", "type": "uses" },
+    { "source": "landscape.personal-banking-customer", "target": "internet-banking.mobile-app", "type": "uses" },
     { "source": "landscape.personal-banking-customer", "target": "internet-banking.web-application", "type": "uses" },
     { "source": "landscape.personal-banking-customer", "target": "landscape.customer-service-staff", "type": "uses" }
   ],
   "id": "system-context",
   "nodes": [
-    { "height": 120, "ref": "internet-banking.internet-banking-system", "width": 240, "x": 389, "y": 55 },
-    { "height": 120, "ref": "internet-banking.web-application", "width": 200, "x": 448, "y": 595 },
-    { "height": 120, "ref": "landscape.customer-service-staff", "width": 200, "x": 60, "y": 390 },
-    { "height": 120, "ref": "landscape.email-system", "width": 240, "x": 321, "y": 235 },
-    { "height": 120, "ref": "landscape.mainframe-banking-system", "width": 240, "x": 60, "y": 130 },
-    { "height": 120, "ref": "landscape.personal-banking-customer", "width": 240, "x": 281, "y": 415 }
+    { "height": 120, "ref": "internet-banking.internet-banking-system", "width": 240, "x": 72, "y": 55 },
+    { "height": 120, "ref": "internet-banking.mobile-app", "width": 200, "x": 600, "y": 450 },
+    { "height": 120, "ref": "internet-banking.web-application", "width": 200, "x": 268, "y": 595 },
+    { "height": 120, "ref": "landscape.customer-service-staff", "width": 200, "x": 20, "y": 595 },
+    { "height": 120, "ref": "landscape.email-system", "width": 240, "x": 141, "y": 235 },
+    { "height": 120, "ref": "landscape.mainframe-banking-system", "width": 240, "x": 170, "y": 740 },
+    { "height": 120, "ref": "landscape.personal-banking-customer", "width": 240, "x": 40, "y": 415 }
   ],
   "schemaVersion": 1,
   "title": "System Context"
